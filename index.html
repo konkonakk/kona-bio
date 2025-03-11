@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Biodata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Konkona's Portfolio</h1>
+            <nav>
+                <ul class="tabs">
+                    <li class="tab-item active" data-tab="about">About Me</li>
+                    <li class="tab-item" data-tab="blog">Blog</li>
+                    <li class="tab-item" data-tab="art">Art</li>
+                    <li class="tab-item" data-tab="books">Books</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Me Section -->
+        <section id="about" class="tab-content active">
+            <div class="about-container">
+                <div class="profile-image">
+                    <img src="biophoto/me.jpg" alt="Profile Photo">
+                </div>
+                <div class="bio-content">
+                    <h2>About Me</h2>
+                    <div class="bio-section">
+                        <h3>Professional</h3>
+                        <ul>
+                            <li>Passionate about creating a vision for the future and building products to delight users.</li>
+                            <li>11+ years of Product Management experience, including Google and start-up/scale-up</li>
+                            <li>10+ years of software development experience as a lead developer</li>
+                            <li>Worked across multiple domains (AdTech, e-commerce, logistics, travel, banking) at global scale</li>
+                            <li>Bachelors in Engineering and MBA</li>
+                        </ul>
+                    </div>
+                    <div class="bio-section">
+                        <h3>Personal</h3>
+                        <ul>
+                            <li>An eclectic interest in art, design, visual creatives, science and technology</li>
+                            <li>Illustrated and wrote children's books which you can buy in amazon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="tab-content">
+            <h2>My Blogs</h2>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Medium Blog">
+                    </div>
+                    <div class="blog-info">
+                        <h3>Medium Blog</h3>
+                        <p>Thoughts, ideas, and insights on technology, product management, and more.</p>
+                        <a href="https://medium.com/@konkona_45277" class="btn" target="_blank">Read on Medium</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Travel Blog">
+                    </div>
+                    <div class="blog-info">
+                        <h3>Travel Stories</h3>
+                        <p>Adventures, experiences, and travel stories from around the world.</p>
+                        <a href="https://konatravels.weebly.com/travel-stories" class="btn" target="_blank">Read Travel Stories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Art Section -->
+        <section id="art" class="tab-content">
+            <h2>My Artwork</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" data-src="konaart/p1.jpg">
+                    <img src="konaart/p1.jpg" alt="Artwork 1">
+                </div>
+                <div class="gallery-item" data-src="konaart/p2.jpg">
+                    <img src="konaart/p2.jpg" alt="Artwork 2">
+                </div>
+                <div class="gallery-item" data-src="konaart/p3.jpg">
+                    <img src="konaart/p3.jpg" alt="Artwork 3">
+                </div>
+                <div class="gallery-item" data-src="konaart/p4.jpg">
+                    <img src="konaart/p4.jpg" alt="Artwork 4">
+                </div>
+                <div class="gallery-item" data-src="konaart/p5.JPG">
+                    <img src="konaart/p5.JPG" alt="Artwork 5">
+                </div>
+                <div class="gallery-item" data-src="konaart/p6.jpeg">
+                    <img src="konaart/p6.jpeg" alt="Artwork 6">
+                </div>
+                <div class="gallery-item" data-src="konaart/p7.jpg">
+                    <img src="konaart/p7.jpg"" alt="Artwork 7">
+                </div>
+                <div class="gallery-item" data-src="konaart/p8.jpg"">
+                    <img src="konaart/p8.jpg"" alt="Artwork 8">
+                </div>
+                <div class="gallery-item" data-src="konaart/p9.jpg"">
+                    <img src="konaart/p9.jpg" alt="Artwork 9">
+                </div>
+            </div>
+            <div id="lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="close">&times;</span>
+                    <img id="lightbox-img" src="" alt="Enlarged Artwork">
+                    <div class="lightbox-controls">
+                        <button id="prev-btn">&lt;</button>
+                        <button id="next-btn">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="tab-content">
+            <h2>My Books</h2>
+            <div class="books-container">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="amazonbooks/tiny1.jpg" alt="Book 1">
+                    </div>
+                    <div class="book-info">
+                        <h3>Adventures of Tiny: The Funfair</h3>
+                        <p>Join Tiny the sheep on an exciting adventure at the funfair!</p>
+                        <a href="https://www.amazon.co.uk/Adventures-Tiny-funfair-sheep/dp/B092PKRK1C/" class="btn" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="amazonbooks/tiny2.jpg" alt="Book 2">
+                    </div>
+                    <div class="book-info">
+                        <h3>Adventures of Tiny: Rainbow Valley</h3>
+                        <p>Follow Tiny the sheep as he explores the magical Rainbow Valley!</p>
+                        <a href="https://www.amazon.co.uk/Adventures-Tiny-Rainbow-valley-sheep/dp/B092M51Y72/" class="btn" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Konkona's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
