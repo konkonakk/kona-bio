@@ -133,23 +133,29 @@ main {
     to { opacity: 1; }
 }
 
-/* About Me Section */
+/* About Me Section 
 .about-container {
     display: flex;
     gap: 40px;
     align-items: flex-start;
 }
-
+*/
 .profile-image {
-    flex: 0 0 400px;
-}
-
-.profile-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
+    flex: 0 0 380px; /* Slightly reduced from 400px */
+    padding: 15px; /* Add padding for framing effect */
+    background-color: white; /* Add background for framing effect */
+  }
+  
+  .profile-image img {
+    border: 3px solid #FFDA78; /* Add decorative border using accent color */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  Adjust spacing between image and bio content
+  
+  .about-container {
+    gap: 50px; /* Increased from 40px */
+    align-items: center; /* Changed from flex-start for better vertical alignment */
+  }
 .bio-content {
     flex: 1;
 }
