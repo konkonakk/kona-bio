@@ -114,10 +114,15 @@ nav {
 }
 
 /* Main Content Styles */
+
+
 main {
-    padding: 40px 0;
-    min-height: calc(100vh - 160px);
-}
+    padding: 50px 0; /* Increased from 40px */
+  }
+  
+  .bio-content {
+    padding-top: 10px; /* Add slight padding at top */
+  }
 
 .tab-content {
     display: none;
@@ -150,15 +155,12 @@ main {
     border: 3px solid #FFDA78; /* Add decorative border using accent color */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
   }
-  Adjust spacing between image and bio content
   
   .about-container {
     gap: 50px; /* Increased from 40px */
     align-items: center; /* Changed from flex-start for better vertical alignment */
   }
-.bio-content {
-    flex: 1;
-}
+
 
 .bio-section {
     margin-bottom: 30px;
