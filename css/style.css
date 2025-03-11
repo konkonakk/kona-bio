@@ -55,7 +55,7 @@ a:hover {
 header {
     background-color: #003285;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0; /* Increased from 20px for more vertical space */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -66,6 +66,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px; /* Added gap for better spacing between logo and navigation */
 }
 
 .logo {
@@ -114,15 +115,10 @@ nav {
 }
 
 /* Main Content Styles */
-
-}
 main {
-    padding: 50px 0; /* Increased from 40px */
-  }
-  
-  .bio-content {
-    padding-top: 10px; /* Add slight padding at top */
-  }
+    padding: 50px 0; /* Increased from 40px for more vertical space */
+    min-height: calc(100vh - 160px);
+}
 
 .tab-content {
     display: none;
@@ -138,27 +134,31 @@ main {
     to { opacity: 1; }
 }
 
-
+/* About Me Section */
 .about-container {
     display: flex;
-    gap: 40px;
-    align-items: flex-start;
+    gap: 50px; /* Increased from 40px for better separation */
+    align-items: center; /* Changed from flex-start for better vertical alignment */
+    margin-top: 30px; /* Added margin-top for spacing from header */
 }
 
 .profile-image {
     flex: 0 0 380px; /* Slightly reduced from 400px */
-    padding: 15px; /* Add padding for framing effect */
-    background-color: white; /* Add background for framing effect */
-  }
-  
-  .profile-image img {
-    border: 3px solid #FFDA78; /* Add decorative border using accent color */
+    padding: 15px; /* Added padding for framing effect */
+    background-color: white; /* Added background for framing effect */
+    border-radius: 15px; /* Added to match inner image radius plus padding */
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #FFDA78; /* Added decorative border using accent color */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-  }
-  
+}
 
 .bio-content {
     flex: 1;
+    padding-top: 10px; /* Added slight padding at top */
 }
 
 .bio-section {
